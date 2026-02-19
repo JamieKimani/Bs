@@ -1,12 +1,13 @@
+from urllib import request
+
 from django.shortcuts import render
 
 # Create your views here.
-def about(request):
-    return render(request, 'customer/about.html')
-def contact(request):
-    return render(request, 'customer/contact.html')
-def home(request):
-    return render(request, 'customer/home.html')
-def profile(request):
-    return render(request, 'customer/profile.html')
-
+def index(request):
+    return render(request, 'customer/index.html')
+def portfolio(request):
+    return render(request, 'customer/portfolio-details.html')
+def service_details(request):
+    return render(request, 'customer/service-details.html')
+def starter_page(request):
+    return render(request, 'customer/starter-page.html')
